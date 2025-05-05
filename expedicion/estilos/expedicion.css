@@ -1,0 +1,58 @@
+
+
+/*
+formulario
+*/
+
+h1{
+    font-family: Verdana;
+
+}
+h4{
+    font-family: Verdana;
+    font-size: 20px;
+    margin-top: 1ch;
+    font-weight: 300;;
+}
+
+
+
+.row{
+    font-family: Verdana;
+    font-size: 16px;
+    flex-direction: row;
+    justify-content:right;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    margin-top: 2ch;
+    width: auto;
+    max-width: auto;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px;
+    font-weight: bold;
+}
+
+
+    hr {
+        border-color: rgba(167, 164, 164, 0.181);
+      }
+
+   
+    .form-control{
+        padding: .2em 1em;
+        border-radius: 5px;
+        border-color: #69676723;
+        background-color: transparent;
+        width: 90%;
+        background-color: #6967670a;
+        font-size: 15px;
+        color: rgba(22, 14, 14, 0.623);
+        letter-spacing: .5px;
+    }
+
+/*:::::Pie de Pagina*/
+
+

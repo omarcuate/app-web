@@ -1,0 +1,104 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.siged.sep.gob.mx/titulos/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TituloElectronico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FirmaResponsables">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FirmaResponsable">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="nombre"/>
+                      <xs:attribute type="xs:string" name="primerApellido"/>
+                      <xs:attribute type="xs:string" name="segundoApellido"/>
+                      <xs:attribute type="xs:string" name="curp"/>
+                      <xs:attribute type="xs:byte" name="idCargo"/>
+                      <xs:attribute type="xs:string" name="cargo"/>
+                      <xs:attribute type="xs:string" name="abrTitulo"/>
+                      <xs:attribute type="xs:string" name="sello"/>
+                      <xs:attribute type="xs:string" name="certificadoResponsable"/>
+                      <xs:attribute type="xs:long" name="noCertificadoResponsable"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Institucion">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:int" name="cveInstitucion"/>
+                <xs:attribute type="xs:string" name="nombreInstitucion"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Carrera">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:int" name="cveCarrera"/>
+                <xs:attribute type="xs:string" name="nombreCarrera"/>
+                <xs:attribute type="xs:date" name="fechaInicio"/>
+                <xs:attribute type="xs:date" name="fechaTerminacion"/>
+                <xs:attribute type="xs:byte" name="idAutorizacionReconocimiento"/>
+                <xs:attribute type="xs:string" name="autorizacionReconocimiento"/>
+                <xs:attribute type="xs:int" name="numeroRvoe"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Profesionista">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="curp"/>
+                <xs:attribute type="xs:string" name="nombre"/>
+                <xs:attribute type="xs:string" name="primerApellido"/>
+                <xs:attribute type="xs:string" name="segundoApellido"/>
+                <xs:attribute type="xs:string" name="correoElectronico"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Expedicion">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:date" name="fechaExpedicion"/>
+                <xs:attribute type="xs:byte" name="idModalidadTitulacion"/>
+                <xs:attribute type="xs:string" name="modalidadTitulacion"/>
+                <xs:attribute type="xs:date" name="fechaExencionExamenProfesional"/>
+                <xs:attribute type="xs:byte" name="cumplioServicioSocial"/>
+                <xs:attribute type="xs:byte" name="idFundamentoLegalServicioSocial"/>
+                <xs:attribute type="xs:string" name="fundamentoLegalServicioSocial"/>
+                <xs:attribute type="xs:byte" name="idEntidadFederativa"/>
+                <xs:attribute type="xs:string" name="entidadFederativa"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Antecedente">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="institucionProcedencia"/>
+                <xs:attribute type="xs:byte" name="idTipoEstudioAntecedente"/>
+                <xs:attribute type="xs:string" name="tipoEstudioAntecedente"/>
+                <xs:attribute type="xs:byte" name="idEntidadFederativa"/>
+                <xs:attribute type="xs:string" name="entidadFederativa"/>
+                <xs:attribute type="xs:date" name="fechaTerminacion"/>
+                <xs:attribute type="xs:int" name="noCedula"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:float" name="version"/>
+      <xs:attribute type="xs:int" name="folioControl"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

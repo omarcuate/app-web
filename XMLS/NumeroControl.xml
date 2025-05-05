@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TituloElectronico xmlns="https://www.siged.sep.gob.mx/titulos/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.siged.sep.gob.mx/titulos/ schema.xsd" version="1.0" folioControl="prueba3">
+  <FirmaResponsables>
+    <FirmaResponsable nombre="nombre" primerApellido="nombre" segundoApellido="nombre" curp="nombre" IdGenero="Hombre " cargo="nombre" abrTitulo="nombre" sello="nombre" certificadoResponsable="nombre" noCertificadoResponsable="nombre"/>
+  </FirmaResponsables>
+  <Institucion cveInstitucion="cveInstitucion" nombreInstitucion="nombreInstitucion"/>
+  <Carrera nombreCarrera="nombreCarrera" fechaInicio="fechaInicio" fechaTerminacion="fechaTerminacion" idAutorizacionReconocimiento="idAutorizacionReconocimiento" autorizacionReconocimiento="autorizacionReconocimiento" numeroRvoe="numeroRvoe"/>
+  <Profesionista curp="curp" nombre="nombre" primerApellido="primerApellido" segundoApellido="segundoApellido" correoElectronico="correoElectronico"/>
+  <Expedicion fechaExpedicion="fechaExpedicion" idModalidadTitulacion="idModalidadTitulacion" modalidadTitulacion="modalidadTitulacion" fechaExencionExamenProfesional="fechaExencionExamenProfesional" cumplioServicioSocial="cumplioServicioSocial" idFundamentoLegalServicioSocial="idFundamentoLegalServicioSocial" fundamentoLegalServicioSocial="fundamentoLegalServicioSocial" idEntidadFederativa="idEntidadFederativa" entidadFederativa="entidadFederativa"/>
+  <Antecedente institucionProcedencia="institucionProcedencia" idTipoEstudioAntecedente="idTipoEstudioAntecedente" tipoEstudioAntecedente="tipoEstudioAntecedente" idEntidadFederativa="idEntidadFederativa" entidadFederativa="entidadFederativa" fechaTerminacion="fechaTerminacion" noCedula="noCedula"/>
+</TituloElectronico>
